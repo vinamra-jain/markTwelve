@@ -31,6 +31,7 @@ body {
 }
 #app-container {
   margin: auto;
+  width: 50vw;
   max-width: 500px;
 }
 h1,
@@ -81,9 +82,9 @@ button {
   background-color: var(--cold-off-white);
   color: var(--app-color);
   border-radius: 0.5rem;
-  padding: 2rem;
-  width: 50vw;
-  max-width: 450px;
+  padding: 1rem;
+  width: 45vw;
+  max-width: 480px;
   font-weight: bolder;
 }
 
