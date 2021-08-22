@@ -1,57 +1,90 @@
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-:root{
-    --nav-color:#495057;
-    --app-color: #212529;
-    --cold-off-white: #f1faee;
-}
 
+:root {
+  --nav-color: #495057;
+  --app-color: #212529;
+  --cold-off-white: #f1faee;
+}
 * {
   font-family: "Philosopher", sans-serif;
   color: var(--cold-off-white);
 }
-
-body{
-    margin: 0%;
+body {
+  margin: 0%;
+  background-color: var(--app-color);
 }
-
 #nav-bar {
-  background-color:var(--nav-color);
+  background-color: var(--nav-color);
   padding: 1rem;
+  font-weight: 500;
 }
-
-#nav-bar a{
-    text-decoration: none;
-    margin: 1rem;
-    font-weight: 700;
+.nav-links {
+  text-decoration: none;
+  margin: 1.1vw;
+  padding: 0 0.2rem 0.3rem 0.2rem;
+  
 }
-
-#container{
-    padding: 1rem;
-    background-color: var(--app-color);
-    text-align: center;
+.active{
+    border-bottom: 2px solid var(--cold-off-white);
+    border-radius: 0.5rem;
+    font-weight: 600;
 }
-
-h1{
-    margin-top: 0;
+#app-container {
+  margin: auto;
+  max-width: 500px;
 }
-label, input, button{
-    display: block;
-    margin: auto;
-    border: none;
-    width: 50vw;
+h1,
+#output {
+  text-align: center;
+}
+#formula {
+    border: 3px solid var(--cold-off-white);
+    border-radius: 0.5rem;
     padding: 0.5rem;
+    margin-bottom: 20px;
+    font-size: x-large;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    width: 50vw;
+    max-width: 495px;
 }
-label{
-    margin-bottom: 5px;
+.label-block {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.input-block {
+  display: block;
+  margin: auto;
+  border: none;
+  width: 50vw;
+  max-width: 500px;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-bottom: 20px;
+  color: var(--app-color);
+}
+button {
+  display: block;
+  background-color: var(--nav-color);
+  border: none;
+  margin: 30px auto;
+  max-width: 100px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 
-input{
-    margin-bottom: 10px;
-    color: var(--app-color);
+.left-align {
+  text-align: left;
 }
-button{
-    background-color: var(--nav-color);
-    margin: 20px auto;
-    max-width: 100px;
+#output {
+  background-color: var(--cold-off-white);
+  color: var(--app-color);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  width: 50vw;
+  max-width: 450px;
+  font-weight: bolder;
 }
+
 

@@ -10,18 +10,20 @@
   </head>
   <body>
     <nav id="nav-bar">
-        <a href="./index.html">Is Triangle?</a>
-        <a href="./quizTriangle.html">Quiz</a>
-        <a href="./hypotenuse.html">Hypotenuse Calculator</a>
-        <a href="./triangleArea.html">Area Calculator</a>
-      </nav>
-    <h1>Area Calculator for Triangle</h1>
-    <label>Base(in cm)</label>
-    <input type="number" class="base-and-height"/>
-    <label>Height(in cm)</label>
-    <input type="number" class="base-and-height"/>
-    <button id="calc-btn">Calculate Area</button>
-    <div id="output"></div>
-
+      <a class="nav-links" href="./index.html">Is Triangle?</a>
+      <a class="nav-links" href="./quizTriangle.html">Quiz</a>
+      <a class="nav-links" href="./hypotenuse.html">Hypotenuse CALC</a>
+      <a class="nav-links active" href="./triangleArea.html">Area CALC</a>
+    </nav>
+    <div id="app-container">
+      <h1>Area Calculator for Triangle</h1>
+      <div id="formula">Area = 1/2*(Base*Height)</div>
+      <label class="label-block left-align" >Base(in cm)</label>
+      <input type="number" class="base-and-height input-block" />
+      <label class="label-block left-align" >Height(in cm)</label>
+      <input type="number" class="base-and-height input-block" />
+      <button id="calc-btn">Calculate Area</button>
+      <div id="output"></div>
+    </div>
   </body>
 </html>

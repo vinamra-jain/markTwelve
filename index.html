@@ -10,23 +10,21 @@
   </head>
   <body>
     <nav id="nav-bar">
-      <a href="./index.html">Is Triangle?</a>
-      <a href="./quizTriangle.html">Quiz</a>
-      <a href="./hypotenuse.html">Hypotenuse Calculator</a>
-      <a href="./triangleArea.html">Area Calculator</a>
+      <a class="nav-links active" href="./index.html">Is Triangle?</a>
+      <a class="nav-links" href="./quizTriangle.html">Quiz</a>
+      <a class="nav-links" href="./hypotenuse.html">Hypotenuse CALC</a>
+      <a class="nav-links" href="./triangleArea.html">Area CALC</a>
     </nav>
-    <main id="container">
-      <div id="app-container">
-        <h1>Is Triangle?</h1>
-        <label for="angle-one">angle1(in degrees)</label>
-        <input type="number" name="angle-one" id="angle-one" />
-        <label for="angle-two">angle2(in degrees)</label>
-        <input type="number" name="angle-two" id="angle-two" />
-        <label for="angle-three">angle3(in degrees)</label>
-        <input type="number" name="angle-three" id="angle-three" />
-        <button id="check-btn">Is Triangle?</button>
-        <div id="output"></div>
-      </div>
-    </main>
+    <div id="app-container">
+      <h1>Is Triangle?</h1>
+      <label class="label-block" for="angle-one">angle1(in degrees)</label>
+      <input class="input-block" type="number" name="angle-one" id="angle-one" />
+      <label class="label-block" for="angle-two">angle2(in degrees)</label>
+      <input class="input-block" type="number" name="angle-two" id="angle-two" />
+      <label class="label-block" for="angle-three">angle3(in degrees)</label>
+      <input class="input-block" type="number" name="angle-three" id="angle-three" />
+      <button id="check-btn">Is Triangle?</button>
+      <div id="output"></div>
+    </div>
   </body>
 </html>

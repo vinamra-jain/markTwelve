@@ -10,45 +10,52 @@
   </head>
   <body>
     <nav id="nav-bar">
-      <a href="./index.html">Is Triangle?</a>
-      <a href="./quizTriangle.html">Quiz</a>
-      <a href="./hypotenuse.html">Hypotenuse Calculator</a>
-      <a href="./triangleArea.html">Area Calculator</a>
+      <a class="nav-links" href="./index.html">Is Triangle?</a>
+      <a class="nav-links active" href="./quizTriangle.html">Quiz</a>
+      <a class="nav-links" href="./hypotenuse.html">Hypotenuse CALC</a>
+      <a class="nav-links" href="./triangleArea.html">Area CALC</a>
     </nav>
-    <h1>Triangle Quiz</h1>
-    <form id="quiz-form">
-      <div class="quiz-container">
-        <p>
-          What is the third angle for the triangle where angle1 = 45° and angle2
-          = 45°?
-        </p>
-        <input type="radio" name="third-angle" id="fourty-five" value="45°" />
-        <label for="forty-five">45°</label>
-        <input type="radio" name="third-angle" id="ninety" value="90°" />
-        <label for="ninety">90°</label>
-        <input type="radio" name="third-angle" id="sixty" value="60°" />
-        <label for="sixty°">60°</label>
-        <br />
-        <p>If a triangle has an angle of 90 degrees, what is it called?</p>
-        <input
-          type="radio"
-          name="name-of-triangle"
-          id="obtuse"
-          value="obtuse"
-        />
-        <label for="obtuse">obtuse</label>
-        <input type="radio" name="name-of-triangle" id="acute" value="acute" />
-        <label for="acute">acute</label>
-        <input
-          type="radio"
-          name="name-of-triangle"
-          id="right-angle"
-          value="right angled"
-        />
-        <label for="right-angle">right angled</label>
-      </div>
-    </form>
-    <button id="submit-btn">Submit</button>
-    <div id="output"></div>
+    <div id="app-container">
+      <h1>Triangle Quiz</h1>
+      <form id="quiz-form">
+        <div class="quiz-container">
+          <p>
+            Q1. What is the third angle for the triangle where angle1 = 45° and
+            angle2 = 45°?
+          </p>
+          <input type="radio" name="third-angle" id="fourty-five" value="45°" />
+          <label for="forty-five">45°</label>
+          <input type="radio" name="third-angle" id="ninety" value="90°" />
+          <label for="ninety">90°</label>
+          <input type="radio" name="third-angle" id="sixty" value="60°" />
+          <label for="sixty°">60°</label>
+          <br />
+          <p>Q2. If a triangle has an angle of 90 degrees, what is it called?</p>
+          <input
+            type="radio"
+            name="name-of-triangle"
+            id="obtuse"
+            value="obtuse"
+          />
+          <label for="obtuse">obtuse</label>
+          <input
+            type="radio"
+            name="name-of-triangle"
+            id="acute"
+            value="acute"
+          />
+          <label for="acute">acute</label>
+          <input
+            type="radio"
+            name="name-of-triangle"
+            id="right-angle"
+            value="right angled"
+          />
+          <label for="right-angle">right angled</label>
+        </div>
+      </form>
+      <button id="submit-btn">Submit</button>
+      <div id="output"></div>
+    </div>
   </body>
 </html>

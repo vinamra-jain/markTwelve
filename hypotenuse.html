@@ -10,17 +10,20 @@
   </head>
   <body>
     <nav id="nav-bar">
-      <a href="./index.html">Is Triangle?</a>
-      <a href="./quizTriangle.html">Quiz</a>
-      <a href="./hypotenuse.html">Hypotenuse Calculator</a>
-      <a href="./triangleArea.html">Area Calculator</a>
+      <a class="nav-links" href="./index.html">Is Triangle?</a>
+      <a class="nav-links" href="./quizTriangle.html">Quiz</a>
+      <a class="nav-links active" href="./hypotenuse.html">Hypotenuse CALC</a>
+      <a class="nav-links" href="./triangleArea.html">Area CALC</a>
     </nav>
-    <h1>Hypotenuse Calculator</h1>
-    <label>a=</label>
-    <input type="number" class="sides" />
-    <label>b=</label>
-    <input type="number" class="sides" />
-    <button id="calculate-btn">Calculate Hypotenuse</button>
-    <div id="output"></div>
+    <div id="app-container">
+      <h1>Hypotenuse Calculator</h1>
+      <div id="formula">Hypotenuse(c) = &Sqrt;(a<sup>2</sup> + b<sup>2</sup>)</div>
+      <label class="label-block left-align">a=</label>
+      <input type="number" class="sides input-block" />
+      <label class="label-block left-align">b=</label>
+      <input type="number" class="sides input-block" />
+      <button id="calculate-btn">Calculate Hypotenuse</button>
+      <div id="output"></div>
+    </div>
   </body>
 </html>
